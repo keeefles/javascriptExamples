@@ -178,7 +178,58 @@ console.log(data);
 
 data.unshift('new', 'element')
 data.pop()
+// .unshift is to add a new element.
 // data.pop removes the last element.
+// push adds an element to the end of the array.
 // let = lastRemovedElement = data.pop()
 // then use console.log(lastRemovedElement); brings back the last removed element.
 console.log(data);
+
+// let newArr = data.concat(lastRemovedElement)
+// removes the last element
+
+data.shift()
+console.log("after shift");
+console.log(data);
+console.log('before slicing');
+data 
+
+
+/*
+
+splice = add or remove.
+0 => adding.
+1 => Number(s) of elements to remove.
+
+*/
+
+// adding a splice
+data.splice(2, 0, 'Joel')
+console.log(data);
+
+let numbers = [1, 3, 5]
+numbers.splice(1, 0, '2', '9', '4')
+console.table(numbers);
+
+// removing element using splice
+numbers.splice(2, 2)
+console.log(numbers);
+
+console.table(numbers)
+
+
+
+
+// reverse
+data.reverse()
+console.log(data);
+
+
+
+
+// sorting
+console.log(data.sort());
+// return only numbers
+data.push(23, 7.4)
+// let numbers = data.filter( a=> typeof a == 'number' )65
+console.log('=====OBJECT=====')
