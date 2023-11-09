@@ -163,7 +163,7 @@ let numbers = [
 make use of console.log(table); for easier usage.
 */
 
-let data = [
+/*let data = [
     3, 5, 8,
     'Veronique',
     'Sivuyisiwe'
@@ -202,7 +202,7 @@ splice = add or remove.
 1 => Number(s) of elements to remove.
 
 */
-
+/*
 // adding a splice
 data.splice(2, 0, 'Joel')
 console.log(data);
@@ -216,20 +216,38 @@ numbers.splice(2, 2)
 console.log(numbers);
 
 console.table(numbers)
+*/
 
 
+let data = [7, 3, 'Abc', 2, 1, 'abc', 6]
+console.log(data);
+// reverse - reverses the order of numbers and words displayed.
+console.log(data.reverse());
 
+// sorting - sorts numbers in ascending order
+console.log(data.sort());
 
-// reverse
-data.reverse()
+// return only numbers - displays only numbers within an array.
+data.push(23, 7.4)
 console.log(data);
 
+/*let numbers = data.filter( a=> typeof a == 'number' )
+console.log('=====OBJECT=====')*/
 
+let numbers = data.filter(onlyNumbers)
+// Named Function or function declaration.
+function onlyNumbers(a) {
+    return typeof a == 'number'
+}
+console.log(numbers);
 
+// TYPEOF checks the data types.
 
-// sorting
-console.log(data.sort());
-// return only numbers
-data.push(23, 7.4)
-// let numbers = data.filter( a=> typeof a == 'number' )65
-console.log('=====OBJECT=====')
+/* let numbers = data.filter(a=> a%2 ==0)
+console.log(numbers);
+displays EVEN NUMBERS only 
+as well as...
+ */
+
+let evenNumbers = data.filter( x=> x % 2 >=1)
+console.log(evenNumbers);
