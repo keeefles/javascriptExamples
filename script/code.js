@@ -224,6 +224,13 @@ console.log(data);
 // reverse - reverses the order of numbers and words displayed.
 console.log(data.reverse());
 
+console.log(data.slice(2, 4));
+
+data.splice(3, 0, 'Aakeefah')
+console.table(data);
+data.splice(3, 1)
+console.log(data)
+
 // sorting - sorts numbers in ascending order
 console.log(data.sort());
 
@@ -251,3 +258,17 @@ as well as...
 
 let evenNumbers = data.filter( x=> x % 2 >=1)
 console.log(evenNumbers);
+
+let sentence = "I am going to work."
+console.log(sentence);
+console.log(sentence.at(-1));
+
+let size = sentence.length
+console.log(size);
+console.log(sentence.slice);
+console.log(sentence[size-1]);
+console.log(sentence.slice(0, -1));
+console.log(sentence);
+console.log(sentence.toUpperCase());
+console.log(sentence.toLowerCase());
+console.log(sentence.includes('work'));
