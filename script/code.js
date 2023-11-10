@@ -134,12 +134,12 @@ console.log(+numb1 + +numb2);
 */
 
 
-let numb1 = "3"
+/*let numb1 = "3"
 let numb2 = "4"
 console.log(+numb1 + +numb2);
 console.log(eval(`${numb1} + ${numb2}`) );
 
-console.log(window);
+console.log(window);*/
 
 /*
 arrays are a collection of data.
@@ -219,7 +219,7 @@ console.table(numbers)
 */
 
 
-let data = [7, 3, 'Abc', 2, 1, 'abc', 6]
+/*let data = [7, 3, 'Abc', 2, 1, 'abc', 6]
 console.log(data);
 // reverse - reverses the order of numbers and words displayed.
 console.log(data.reverse());
@@ -241,12 +241,12 @@ console.log(data);
 /*let numbers = data.filter( a=> typeof a == 'number' )
 console.log('=====OBJECT=====')*/
 
-let numbers = data.filter(onlyNumbers)
+/*let numbers = data.filter(onlyNumbers)
 // Named Function or function declaration.
 function onlyNumbers(a) {
     return typeof a == 'number'
 }
-console.log(numbers);
+console.log(numbers);*/
 
 // TYPEOF checks the data types.
 
@@ -255,10 +255,10 @@ console.log(numbers);
 displays EVEN NUMBERS only 
 as well as...
  */
-
+/*
 let evenNumbers = data.filter( x=> x % 2 >=1)
 console.log(evenNumbers);
-
+*/
 
 // sentence 
 
@@ -275,5 +275,12 @@ console.log(sentence);
 console.log(sentence.toUpperCase());
 console.log(sentence.toLowerCase());
 console.log(sentence.includes('work'));
+console.log(sentence.split(""));
+
 
 // end of sentence
+
+// OBJECTS
+let numbers = [9, 8 , 3]
+console.log(numbers);
+console.log(typeof numbers);
