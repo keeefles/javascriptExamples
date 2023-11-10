@@ -259,6 +259,9 @@ as well as...
 let evenNumbers = data.filter( x=> x % 2 >=1)
 console.log(evenNumbers);
 
+
+// sentence 
+
 let sentence = "I am going to work."
 console.log(sentence);
 console.log(sentence.at(-1));
@@ -272,3 +275,5 @@ console.log(sentence);
 console.log(sentence.toUpperCase());
 console.log(sentence.toLowerCase());
 console.log(sentence.includes('work'));
+
+// end of sentence
