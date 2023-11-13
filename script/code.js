@@ -261,7 +261,7 @@ console.log(evenNumbers);
 */
 
 // sentence 
-
+/*
 let sentence = "I am going to work."
 console.log(sentence);
 console.log(sentence.at(-1));
@@ -272,15 +272,81 @@ console.log(sentence.slice);
 console.log(sentence[size-1]);
 console.log(sentence.slice(0, -1));
 console.log(sentence);
-console.log(sentence.toUpperCase());
+// makes all letters uppercase
+console.log(sentence.toUpperCase()); 
+// makes all letters lowercase
 console.log(sentence.toLowerCase());
+// true or false
 console.log(sentence.includes('work'));
+// separates all the letters and uts them into different stuffs.
 console.log(sentence.split(""));
-
+*/
 
 // end of sentence
 
 // OBJECTS
+// when creating an Object, make use of let or const.
+// specify value in curly bracket.
+// if you're making use of an array within an object, use a sqaure bracket to specify.
+// use a curly bracket for the specific index.
+
 let numbers = [9, 8 , 3]
 console.log(numbers);
 console.log(typeof numbers);
+
+let person = {
+    name: 'Peter',
+    surname: 'Shawn',
+    age: 30,
+    subjects: ['HTML', 'CSS3', 'JavaScript']
+}
+// display the object to the console.
+// console.log(person);
+// console.table(person);
+
+// make use of the dot operator.
+// console.log(person.name);
+// make use of the square bracket
+// console.log(person['surname'])
+// with the dot operator
+// console.log(person.age);
+
+// displays only the keys
+// console.log(Object.keys(person));
+// displays only the values within the respective keys
+// console.log(Object.values(person));
+// displays the subject starting from the last element.
+// console.log(person.subjects.at(-1));
+
+/*
+ARRAY: collection of data
+OBJECT: represents a place, person or thing.
+        such as a car, phone, etc.
+*/
+
+/*
+let studentInfo = [
+    {
+        id: 1,
+        name: 'Your Name',
+        surname: 'Your Surname'
+    },
+    {
+        id: 2,
+        name: 'Your Name',
+        surname: 'Your Surname'
+    }
+]
+*/
+
+/*
+
+O P E R A T O R S
+- artihmetic : +, -, *, /, 
+- assignment
+- comparison
+- logical
+- conditional
+- type or unary operator
+
+*/
