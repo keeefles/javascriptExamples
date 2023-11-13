@@ -290,16 +290,16 @@ console.log(sentence.split(""));
 // if you're making use of an array within an object, use a sqaure bracket to specify.
 // use a curly bracket for the specific index.
 
-let numbers = [9, 8 , 3]
-console.log(numbers);
-console.log(typeof numbers);
+// let numbers = [9, 8 , 3]
+// console.log(numbers);
+// console.log(typeof numbers);
 
-let person = {
-    name: 'Peter',
-    surname: 'Shawn',
-    age: 30,
-    subjects: ['HTML', 'CSS3', 'JavaScript']
-}
+// let person = {
+//     name: 'Peter',
+//     surname: 'Shawn',
+//     age: 30,
+//     subjects: ['HTML', 'CSS3', 'JavaScript']
+// }
 // display the object to the console.
 // console.log(person);
 // console.table(person);
@@ -341,12 +341,79 @@ let studentInfo = [
 
 /*
 
-O P E R A T O R S
-- artihmetic : +, -, *, /, 
-- assignment
-- comparison
-- logical
-- conditional
-- type or unary operator
+O P E R A T O R S ~
+operator precedence - making use of BODMAS.
+console.log(7 + 5 * 2);
 
+- artihmetic : +, -, *, /, % (modulus), ** (Exponent), ++, --
+    - numb++
+    - ++numb
+    - a = b + c
+    - m = b % c
+
+- assignment =, +=, *=, /=, %=
+    - let a = 3
+      let b = 2
+      let c = a + b is the same as.
+    - a += c
+
+- comparison
+
+
+- logical
+
+
+- conditional
+
+
+- type or unary operator
 */
+
+// let salary = 7000
+// let bonus = 2000
+// let performance = false
+
+// if(salary < 5000) {
+//     console.log(salary + bonus);
+// } else {
+//     console.log(salary);
+// }
+// salary has to be higher than the specified 'if' amount.
+
+// if(salary < 5000) {
+//     console.log("Your salary is below R5000");
+// }else if (salary > 5000) {
+//     console.log(salary + bonus);
+// }else {
+//     console.log(`Your salary is R${salary}`);
+// }
+
+// outer if statement
+// if(salary > 5000) {
+// inner if statement
+//     if (performance) {
+//         console.log(salary + bonus);
+//     }else {
+//         console.log(`You didn't perform well\nYour salary is R${salary}`);
+//     }
+// } else {
+//     console.log("R5000");
+// }
+
+
+let marks =100;
+switch (marks) {
+    case 100:
+        console.log("A+");
+    break;
+    case 90:
+        console.log("A");
+    break;
+    default:
+        console.log("other");
+}
+
+let firstName = "Lerato";
+switch (firstName) {
+    case ""
+}
