@@ -401,6 +401,8 @@ console.log(7 + 5 * 2);
 // }
 
 
+/*
+
 let marks =100;
 switch (marks) {
     case 100:
@@ -413,7 +415,55 @@ switch (marks) {
         console.log("other");
 }
 
-let firstName = "Lerato";
-switch (firstName) {
-    case ""
+*/
+
+/*
+
+L O O P S - ternary operator
+
+*/
+
+
+// console.log("0");
+// console.log("1");
+// console.log("2");
+// console.log("3");
+// console.log("4");
+// console.log("5");
+// console.log("6");
+// console.log("7");
+// console.log("8");
+// console.log("9");
+// console.log("10");
+
+
+//  to make an even list using for loop
+// for (let i = 0; i <= 10; i++) {
+//     if(i % 2==0)
+//         console.log(i);
+//     else
+//     console.log(`${i} it is an odd number`);
+// }
+
+
+// if correct display i, if false, display 0.
+// for (let i =10; i >= 0; i--){
+    //console.log( i % 2 == 0 ? `${i} it is an even number` : `${i} odd number`);
+// }
+
+// if you have more than one statement make use of a curly bracket. otherwise, use a c bracket.
+
+// DEBUGGER
+//  for (let i=0; i<=10; i++){
+//     console.log(i);
+//     if(i == 5)
+//         break
+//  }
+// break can only be used within a full loop.
+
+
+for(let i = 0; i <= 18; i++) {
+    let numbers = [12, 18, 11, 5, 8, 2];
+    console.log(i)
+    
 }
