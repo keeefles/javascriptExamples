@@ -469,19 +469,19 @@ for(let i = 0; i <= 18; i++) {
 }
 */
 
-let a = 3
-console.log(a++);
-console.log(a);
+// let a = 3
+// console.log(a++);
+// console.log(a);
 
 
 // use of continue in loop.
 // skips to the next loop, allows you to start another loop without finishing.
-for(let i = 0; i<=10; i++) {
-    if (1 == 5) {
-        continue
-    }
-    console.log(i);
-}
+// for(let i = 0; i<=10; i++) {
+//     if (1 == 5) {
+//         continue
+//     }
+//     console.log(i);
+// }
 
 // let cnt = 0
 // while(cnt <= 10) {
@@ -494,37 +494,90 @@ for(let i = 0; i<=10; i++) {
 // for loop
 // do while condition comes after.
 
-let cnt = 0
-do {
-    console.log(cnt);
-    cnt++
-}while(cnt <=10)
+// let cnt = 0
+// do {
+//     console.log(cnt);
+//     cnt++
+// }while(cnt <=10)
 
 // if we don't have the below code it will produce an infinite loop.
 // foreach
 
+/*
 let numbers = [12, 18, 11, 5, 2, 8];
 for(let i=0; i<numbers.length; i++){
     console.log
     (`${i} => ${numbers[i]}`);
 }
+*/
+
 // numbers.forEach array method that allows the code to look clean.
 // displays the array in console.
-numbers.forEach((number) =>{
-    console.log(number);
-})
+// numbers.forEach((number) =>{
+//     console.log(number);
+// })
+
 // displays numbers in the console log.
 // numbers.forEach(display)
 // function display(number) {
 //     console.log(number);
 // }
 
-numbers.forEach((number, i)=>{
-    console.log(number, i);
-})
+// numbers.forEach((number, i)=>{
+//     console.log(number, i);
+// })
 
-numbers.forEach((number, i) =>{
-    if(number % 2 == 0)
-    console.log(number);
+// display even numbers only.
+// numbers.forEach((number, i) =>{
+//     if(number % 2 == 0)
+//     console.log(number);
+// }
+// )
+
+// in represents index. reads the index of each element.
+/*
+for(let i in numbers){
+    console.log(i, numbers[i]);
 }
-)
+*/
+
+// for of.
+// displays the array the amount of numbers that is displayed within the array.
+/*
+for(let number of numbers) {
+    console.log(numbers);
+}
+*/
+let numbers = [12, 18, 12, 11, 5, 18, 2, 8, 2];
+let unique = []
+numbers.forEach((number)=>{
+    if (!unique.includes(number)) {
+        unique.push(number)
+    }
+})
+console.log(unique);
+
+console.log(Array.from(new Set (numbers)));
+
+/*
+
+F U N C T I O N S ~
+named function or declaration function.
+
+function constName(){
+    console.log("Name is Aakeefah.");
+    constName()
+    constName ("Leigh")
+}
+
+*/
+
+// doesnt display the second name because there is no argument. parameter was not specified.
+// another word for parameter is placeholder.
+// argument is a function that was defined.
+
+function constName(firstName) {
+    console.log(`First name is ${firstName || 'Aakeefah'}`);
+}
+constName()
+constName ("Leigh")
