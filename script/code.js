@@ -581,3 +581,9 @@ function constName(firstName) {
 }
 constName()
 constName ("Leigh")
+
+let greeting = " Hello World ";
+console.log(greeting.split(""));
+let = 
+// console.log(greeting.pop(""));
+console.log(greeting.trim().split(""));
