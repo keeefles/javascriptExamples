@@ -461,9 +461,70 @@ L O O P S - ternary operator
 //  }
 // break can only be used within a full loop.
 
-
+/*
 for(let i = 0; i <= 18; i++) {
     let numbers = [12, 18, 11, 5, 8, 2];
     console.log(i)
     
 }
+*/
+
+let a = 3
+console.log(a++);
+console.log(a);
+
+
+// use of continue in loop.
+// skips to the next loop, allows you to start another loop without finishing.
+for(let i = 0; i<=10; i++) {
+    if (1 == 5) {
+        continue
+    }
+    console.log(i);
+}
+
+// let cnt = 0
+// while(cnt <= 10) {
+//     console.log(cnt);
+// if we don't have the below code it will produce an infinite loop.
+//     cnt++;
+// }while(cnt <=10)
+
+// while loop has a condition that specifies when it ends. condition comes first.
+// for loop
+// do while condition comes after.
+
+let cnt = 0
+do {
+    console.log(cnt);
+    cnt++
+}while(cnt <=10)
+
+// if we don't have the below code it will produce an infinite loop.
+// foreach
+
+let numbers = [12, 18, 11, 5, 2, 8];
+for(let i=0; i<numbers.length; i++){
+    console.log
+    (`${i} => ${numbers[i]}`);
+}
+// numbers.forEach array method that allows the code to look clean.
+// displays the array in console.
+numbers.forEach((number) =>{
+    console.log(number);
+})
+// displays numbers in the console log.
+// numbers.forEach(display)
+// function display(number) {
+//     console.log(number);
+// }
+
+numbers.forEach((number, i)=>{
+    console.log(number, i);
+})
+
+numbers.forEach((number, i) =>{
+    if(number % 2 == 0)
+    console.log(number);
+}
+)
