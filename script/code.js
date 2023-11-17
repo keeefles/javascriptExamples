@@ -597,25 +597,6 @@ function constName(firstName) {
 }
 constName("Aakeefah")
 
-console.log("object literal");
-    let person = {
-        firstName: 'Joel'
-}
-console.log(person);
-console.log("Object.create()");
-let smartPhone = object.create(
-    {
-        make: "Samsung",
-        model: "A 51"
-    }
-)
-console.log(smartPhone);
-console.log("new keyword" | "Object constructor");
-let computer = new Object({
-    brand: "Dell",
-    amount: 18000
-})
-
 
 // function 
 
@@ -656,7 +637,6 @@ function display() {
     console.log(`inside of a function: ${numb1}`);
 }
 display()
-console.log(`outside a function ${numb1}`);
 
 // if there isn't a value it will say reference error but if the function is not defined then it will say undefined.
 
@@ -666,6 +646,62 @@ F A C T O R Y  F U N C T I O N `
 
 */
 
-// a factory function is a function that returns a new object after creating an object.
+// a factory function allows us to create and return an object.
+
+// function person() {
+//     let data = {
+//         firstName: 'Peter',
+//         age: 20,
+//     }
+//     return data
+// }
+
+// when using factory funcation, plan it ahead then execute the plan/idea.
+
+function person(firstName, lastName, age, hrs, rate) {
+    return{
+        name: firstName,
+        surname: lastName,
+        userAge: age,
+        hoursWorked: hrs,
+        userRate: rate
+    }
+}
+let person1 = person('Peter', 'Mukanya', 3, 60, 500)
+let person2 = person('John', 'Mukanya', 2, 30, 350)
+console.log(person1);
+console.log(person2);
+
+// A SHORTCUT
+// function person(firstName, lastName, age, hrs, rate) {
+//     return {
+//         firstName, lastName, age, hrs, rate
+//     }
+// }
+
+
+// C O N S T R U C T O R  F U N C T I O N `
+// constructor function allows us to create an object. then return this
+
+// name of constructor function is always in caps. easy identification.
+// makes use of "this" to create a property.
+// all your properties return in one place.
+function Laptop(make, amount) {
+    this.make = make
+    this.amount = amount
+    return this
+}
+function SmartPhone(amount) {
+    this.amount = amount
+}
+
+let laptop1 = new Laptop('HP', 18000)
+let laptop2 = new Laptop('Dell', 20000)
+let samsungA51 = new SmartPhone (20000)
+console.log(laptop1);
+console.log(laptop2);
+console.log(laptop2 instanceof Laptop);
+// checks for true or false - instanceof
+console.log(laptop2 instanceof SmartPhone);
 
 
