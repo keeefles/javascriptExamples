@@ -597,6 +597,26 @@ function constName(firstName) {
 }
 constName("Aakeefah")
 
+console.log("object literal");
+    let person = {
+        firstName: 'Joel'
+}
+console.log(person);
+console.log("Object.create()");
+let smartPhone = object.create(
+    {
+        make: "Samsung",
+        model: "A 51"
+    }
+)
+console.log(smartPhone);
+console.log("new keyword" | "Object constructor");
+let computer = new Object({
+    brand: "Dell",
+    amount: 18000
+})
+
+
 // function 
 
 // hoisting the process where the declaration of functions, variables, classes or imports to the top of the scope prior to the execution of the code.
@@ -639,3 +659,13 @@ display()
 console.log(`outside a function ${numb1}`);
 
 // if there isn't a value it will say reference error but if the function is not defined then it will say undefined.
+
+/*
+
+F A C T O R Y  F U N C T I O N `
+
+*/
+
+// a factory function is a function that returns a new object after creating an object.
+
+
