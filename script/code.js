@@ -548,6 +548,8 @@ for(let number of numbers) {
     console.log(numbers);
 }
 */
+
+/*
 let numbers = [12, 18, 12, 11, 5, 18, 2, 8, 2];
 let unique = []
 numbers.forEach((number)=>{
@@ -558,7 +560,8 @@ numbers.forEach((number)=>{
 console.log(unique);
 
 console.log(Array.from(new Set (numbers)));
-
+// removes duplicates from the array.
+*/
 /*
 
 F U N C T I O N S ~
@@ -576,14 +579,63 @@ function constName(){
 // another word for parameter is placeholder.
 // argument is a function that was defined.
 
+/*
 function constName(firstName) {
     console.log(`First name is ${firstName || 'Aakeefah'}`);
 }
 constName()
 constName ("Leigh")
+*/
 
 let greeting = " Hello World ";
 console.log(greeting.split(""));
-let = 
-// console.log(greeting.pop(""));
 console.log(greeting.trim().split(""));
+
+function constName(firstName) {
+    console.log(`I wanna make ${firstName} the happiest girl in the world.`)
+    console.log(`I'm sure I can make ${firstName} the happiest girl in the world.`);
+}
+constName("Aakeefah")
+
+// function 
+
+// hoisting the process where the declaration of functions, variables, classes or imports to the top of the scope prior to the execution of the code.
+
+console.log("accessing a value");
+x = 3
+console.log(x);
+console.log("creating a variable");
+var x;
+console.log(x);
+
+
+
+let addition = function (numb1, numb2){
+    return numb1 + numb2
+}
+console.log(addition(3,2));
+
+/*
+
+` R E C U R S I V E  F U N C T I O N `
+
+*/
+
+// function repeat(limit) {
+//     let cnt = 1
+//     if(cnt < limit) {
+//         console.log(cnt);
+//         cnt++
+//         repeat(limit)
+//     }
+// }
+// repeat(10)
+
+function display() {
+    let numb1 = 9
+    console.log(`inside of a function: ${numb1}`);
+}
+display()
+console.log(`outside a function ${numb1}`);
+
+// if there isn't a value it will say reference error but if the function is not defined then it will say undefined.
