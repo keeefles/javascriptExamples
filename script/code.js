@@ -278,7 +278,7 @@ console.log(sentence.toUpperCase());
 console.log(sentence.toLowerCase());
 // true or false
 console.log(sentence.includes('work'));
-// separates all the letters and uts them into different stuffs.
+// separates all the letters and puts them into different stuffs.
 console.log(sentence.split(""));
 */
 
@@ -704,4 +704,10 @@ console.log(laptop2 instanceof Laptop);
 // checks for true or false - instanceof
 console.log(laptop2 instanceof SmartPhone);
 
+
+// parseInt only returns the integer.
+// parseFloat returns the whole number with the decimal.
+// innerText and textContent are the same and displays content on the page.
+// inner HTML adds another HTML element.
+// 
 
