@@ -722,7 +722,6 @@ let person = {
     lastName: 'Bruce'
 }
 
-
  when adding and replacing another value into a property make use of square bracket notation or dot notation.
 
  square bracket notation
@@ -881,15 +880,50 @@ J S O N . P A R S E -
 
 /*
 M A T H  A N D  S T R I N G  M E T H O D S
+S T R I N G  M E T H O D
 */
 
-
-
-
+let firstName = 'Joel'
+console.log(firstName.split("").reverse().join(""));
 /*
 
-M A P  A N D  R E D U C E (ARRAY METHODS)
+Exercises on the below methods
+- charAt() to find a character at the specified index value of the string.
+- endsWith() finds the string that ends with a specific character or string.
+- includes() true or false if a specific word/number is included in an array
+- lastIndexOf() returns the last index position of a specific string.
+- indexOf() specifies the index of the value you're looking for
+- replace() returns the string with a new specified value.
+- repeat() returns your string using concat the amount of times you specify.
+- startWith() finds the string that starts with a specified character or string/
+- subString() if the end is bigger than the start then the values are swapped.
+- trim() removes the spaces form both ends
+- trimEnd() removes the spaces from the end only
+- trimStart()  removes the space at the beginning only.
+- slice() returns a new string
+- split() splits the words into letters or sentences into words.
+*/
 
+/*
+M A T H  M E T H O D S
+*/
+
+let numbers = [2, 4, 11, 1]
+let a = 3
+let b = 2
+console.log(`Highest number: ${Math.max(...numbers)}`);
+console.log(`Lowest number: ${Math.min(...numbers)}`);
+// 3^2 = 3 * 3
+console.log(`pow(x,y): ${Math.pow(a, b)}`);
+console.dir(Math);
+
+let rIdx = Math.floor(Math.random() * (numbers.length - 1))
+console.log(numbers);
+console.log(rIdx);
+console.log(numbers[rIdx]);
+
+/*
+M A P  A N D  R E D U C E (ARRAY METHODS)
 */
 
 
