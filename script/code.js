@@ -883,8 +883,8 @@ M A T H  A N D  S T R I N G  M E T H O D S
 S T R I N G  M E T H O D
 */
 
-let firstName = 'Joel'
-console.log(firstName.split("").reverse().join(""));
+// let firstName = 'Joel'
+// console.log(firstName.split("").reverse().join(""));
 /*
 
 Exercises on the below methods
@@ -924,12 +924,34 @@ console.log(numbers[rIdx]);
 
 /*
 M A P  A N D  R E D U C E (ARRAY METHODS)
+map allows you to show only specific data that you request to see. such as 'ID'.
+reduce takes two arguments and returns a single value.
 */
 
+let modify = numbers.map( (x)=>{
+    return x*2
+})
+console.log(modify);
+let sum = numbers.reduce((a, b) => a + b)
+console.log(sum);
+
+/*
+C O N S T R U C T O R (number, array, object)
+*/
+let x = Number(2)
+console.log(x);
+let mrArr = new Array(3, 5, 11)
+console.log(myArr);
+
+let firstName = String("")
+console.log(firstName);
 
 /*
 
 F E T C H  A P I
 
 */
+
+
+
 
