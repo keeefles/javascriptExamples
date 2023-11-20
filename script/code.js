@@ -836,13 +836,14 @@ for(let key in laptop) {
 
 /*
 
-C L O N I N G  A N  O B J E C T - using spread op, Object.assign(), JSON.parse(), )
+C L O N I N G  A N  O B J E C T - using spread op, Object.assign(), JSON.parse()
 
 */
 let car1 = {
     make: 'Toyota',
     year: 2023
 }
+// deep copy
 let car2 = car1
 console.log("==car1==");
 console.log(car1);
@@ -851,6 +852,9 @@ console.log(car2);
 console.log('change the value of car2');
 car2.year = 2024
 console.log(car1, car2);
+
+
+
 /*
 
 M A T H  A N D  S T R I N G  M E T H O D S
