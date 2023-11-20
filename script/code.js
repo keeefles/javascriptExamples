@@ -808,3 +808,46 @@ for (const key in laptop) {
 }
 console.log(Object.keys(laptop));
 console.log(Object.values(laptop));
+
+Object.keys(laptop).forEach( (key)=>{
+    console.log(`${key} -> ${laptop[key]}`);
+})
+Object.values(laptop).forEach( (values)=>{
+    console.log(`${values}`);
+})
+
+
+/*
+
+C L O N I N G  A N  O B J E C T
+
+*/
+
+
+/*
+
+M A T H  A N D  S T R I N G  M E T H O D S
+
+*/
+
+
+/*
+
+S P R E A D  O P E R A T O R 
+
+*/
+
+
+/*
+
+M A P  A N D  R E D U C E (ARRAY METHODS)
+
+*/
+
+
+/*
+
+F E T C H  A P I
+
+*/
+
