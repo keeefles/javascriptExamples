@@ -816,14 +816,41 @@ Object.values(laptop).forEach( (values)=>{
     console.log(`${values}`);
 })
 
+// console.log(laptop.make);
+// console.log(laptop.cpu);
+// console.log(laptop.ram);
+
+/*
+for(let key of laptop) {
+    does not work because object is not iterable
+}
+*/
+
+// reads all the properties for a specific key.
+for(let key in laptop) {
+    console.log(key, ' ', laptop[key]);
+}
+// use a square bracket in case you dont know what the specific key is.
+// if you're targeting a specific key then use the dot notation.
+
 
 /*
 
-C L O N I N G  A N  O B J E C T
+C L O N I N G  A N  O B J E C T - using spread op, Object.assign(), JSON.parse(), )
 
 */
-
-
+let car1 = {
+    make: 'Toyota',
+    year: 2023
+}
+let car2 = car1
+console.log("==car1==");
+console.log(car1);
+console.log("==car2==");
+console.log(car2);
+console.log('change the value of car2');
+car2.year = 2024
+console.log(car1, car2);
 /*
 
 M A T H  A N D  S T R I N G  M E T H O D S
