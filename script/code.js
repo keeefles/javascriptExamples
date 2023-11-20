@@ -278,7 +278,7 @@ console.log(sentence.toUpperCase());
 console.log(sentence.toLowerCase());
 // true or false
 console.log(sentence.includes('work'));
-// separates all the letters and uts them into different stuffs.
+// separates all the letters and puts them into different stuffs.
 console.log(sentence.split(""));
 */
 
@@ -708,104 +708,4 @@ console.log(laptop2 instanceof Laptop);
 // checks if the specified property is within the object. or constructor property.
 console.log(laptop2 instanceof SmartPhone);
 
-
-/* 
-
-20 NOVEMBER 2023
-
-D Y N A M I C  N A T U R E  O F  A N  O B J E C T
-
-*/
-/*
-let person = {
-    firstName: 'John',
-    lastName: 'Bruce'
-}
-
-
- when adding and replacing another value into a property make use of square bracket notation or dot notation.
-
- square bracket notation
- person['firstName'] = 'Peter'
-
-console.log(person);
- dot notation
-person.firstName = 'Peter'
-
- add a new property to the current object
-person.age = 20
-console.log(person);
-
-/*
-
-C O N S T R U C T O R  P R O P E R T Y
-
-it is the same as using instaneof
-when making use of the code below, make sure to use the constructor property = .constructor
-console.log(person1.constructor === NewRecord);
-
-*/
-/*
-function NewRecord(name) {
-    this.name = name;
-}
-let person1 = new NewRecord('John');
-let person2 = {name: 'Henk'};
-
-console.log(person1.constructor === NewRecord);
-     output is true.
-console.log(person1 instanceof NewRecord);
-     output is true.
-console.log(person2.constructor === NewRecord);
-console.log(person2 instanceof NewRecord);
-*/
-// shows false because the NewRecord function was not made use of within the let person2 code.
-
-// objectliteral is used...
-// makes use of the typeof operator.
-/*
-let person = {
-    firstName: 'Aakeefah',
-    lastName: 'Jones',
-    fullName: function() {
-        return `${this.firstName} ${this.lastName}`
-    }
-}
-console.log(person);
-console.log(person.fullName());
-*/
-/*
-let person = {
-    firstName: 'Aakeefah',
-    lastName: 'Jones',
-    hrs: 120,
-    rate: 500,
-    salary: function() {
-        return this.hrs * this.rate
-    }
-}
-// if you wanna display it on console.
-console.log(person.salary());
-console.log(person);
-// if you wanna display it on a function
-person.salary();
-*/
-
-/*
-
-L O O P I N G  T H R O U G H  A N  O B J E C T 
-
-*/
-let laptop = {
-    make: 'Dell',
-    cpu: '3Ghz',
-    ram: '16GB'
-}
-// display all the values and properties within an object using loop.
-console.log(laptop);
-for (const key in laptop) {
-    console.log(laptop[key]);
-}
-console.log(Object.keys(laptop));
-console.log(Object.values(laptop));
 
