@@ -853,10 +853,10 @@ console.log(car2);
 console.log('change the value of car2');
 car2.year = 2024
 console.log(car1, car2);
-/*
 
+/*
 S P R E A D  O P E R A T O R -
-puts the two stuffs into different memory boxes basically so that they can change independently. They're no longer the same copy.
+puts the two stuffs into different memory boxes basically so that they can change independently when you add specifications to the assigned key/s. They're no longer the same copy.
 */
 
 let car2 = {...car1}
@@ -866,9 +866,21 @@ car2.year = 2024
 console.log(car1, car2);
 
 /*
+O B J E C T  A S S I G N -
+*/
+let car3 = Object.assign({}, car1);
+console.log("===car3===");
+console.log(car3);
+console.log("JSON.parse()");
+let car4 = JSON.parse( JSON.stringify(car1))
 
+/*
+J S O N . P A R S E -
+*/
+
+
+/*
 M A T H  A N D  S T R I N G  M E T H O D S
-
 */
 
 
