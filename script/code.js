@@ -402,7 +402,6 @@ console.log(7 + 5 * 2);
 
 
 /*
-
 let marks =100;
 switch (marks) {
     case 100:
@@ -414,13 +413,35 @@ switch (marks) {
     default:
         console.log("other");
 }
-
 */
 
 /*
+L O O P S 
+- `for` when you know the amount of iterations in advance.
+- `while` you don't know the number of iterations in advance.
+- `do-while` you want to guarantee that the loop body executes at least once.
+*/
 
-L O O P S - ternary operator
+let arrayNames = ['tamlin', 'zubair', 'aakeefah', 'muakhir']
+for (let x = 0; x < arrayNames.length; x++)
+console.log(arrayNames[x]);
 
+let lol = {
+    name: 'aakeefah',
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*
+- ternary operator
 */
 
 
@@ -602,12 +623,12 @@ constName("Aakeefah")
 
 // hoisting the process where the declaration of functions, variables, classes or imports to the top of the scope prior to the execution of the code.
 
-console.log("accessing a value");
-x = 3
-console.log(x);
-console.log("creating a variable");
-var x;
-console.log(x);
+// console.log("accessing a value");
+// x = 3
+// console.log(x);
+// console.log("creating a variable");
+// var x;
+// console.log(x);
 
 
 
@@ -709,13 +730,12 @@ console.log(laptop2 instanceof Laptop);
 console.log(laptop2 instanceof SmartPhone);
 
 
-/* 
-
+/*
 20 NOVEMBER 2023
 
 D Y N A M I C  N A T U R E  O F  A N  O B J E C T
-
 */
+
 /*
 let person = {
     firstName: 'John',
@@ -736,14 +756,14 @@ person.age = 20
 console.log(person);
 
 /*
-
 C O N S T R U C T O R  P R O P E R T Y
 
-it is the same as using instaneof
-when making use of the code below, make sure to use the constructor property = .constructor
+- it is the same as using instaneof
+- returns a reference that created the instance of.
+- when making use of the code below, make sure to use the constructor property = .constructor
 console.log(person1.constructor === NewRecord);
-
 */
+
 /*
 function NewRecord(name) {
     this.name = name;
@@ -935,6 +955,8 @@ console.log(modify);
 let sum = numbers.reduce((a, b) => a + b)
 console.log(sum);
 
+
+
 /*
 C O N S T R U C T O R (number, array, object)
 */
@@ -945,13 +967,3 @@ console.log(myArr);
 
 let firstName = String("")
 console.log(firstName);
-
-/*
-
-F E T C H  A P I
-
-*/
-
-
-
-
