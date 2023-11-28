@@ -1,4 +1,5 @@
 // named function
+// callback function - when you pass an argument as a function
 // function greeting() {
     // console.log("hello, there");
 // }
@@ -428,7 +429,7 @@ console.log(arrayNames[x]);
 
 let lol = {
     name: 'aakeefah',
-    
+
 }
 
 
@@ -704,7 +705,7 @@ console.log(person2);
 // }
 
 
-// C O N S T R U C T O R  F U N C T I O N `
+//  C O N S T R U C T O R  F U N C T I O N `
 // constructor function allows us to create an object. then return this
 
 // name of constructor function is always in caps. easy identification.
@@ -960,10 +961,50 @@ console.log(sum);
 /*
 C O N S T R U C T O R (number, array, object)
 */
-let x = Number(2)
-console.log(x);
-let mrArr = new Array(3, 5, 11)
-console.log(myArr);
+// let x = Number(2)
+// console.log(x);
+// let myArr = new Array(3, 5, 11)
+// console.log(myArr);
 
-let firstName = String("")
-console.log(firstName);
+// let firstName = String("")
+// console.log(firstName);
+
+/*
+R E V I S I O N
+*/
+
+// create an array that contains 6 elements but the first 2 must be a numbers.
+// NB MAKE SURE THE ELEMENT AT POSITION 4 IS IN LOWERCASE.
+
+// element is the number of values it contains.
+// index is the position but starts at 0.
+
+let data = [
+    1, 2, 'Bluey', 'pua', 'Clover', 'Meowscles'
+]
+
+// create two objects and add the objects into an array, log the objects as well. AND PUSH INTO THE ARRAY.
+
+let person1 = {
+    name: 'toehieda'
+}
+console.log(person1);
+let person2 = {
+    name: 'ebrahim'
+}
+console.log(person2);
+
+let personInfo = []
+personInfo.push(person1)
+personInfo.push(person2)
+console.log(personInfo);
+console.log(person1);
+console.log(person2);
+
+let myarray =[];
+let address1={street:"Imam Harroon", town:"Landsdowne"};
+
+let address2={street:"Mxenge", town:"Kimberley"};
+
+console.log(myarray.push(address1, address2));
+console.log(myarray.includes(address1, address2));
